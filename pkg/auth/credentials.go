@@ -39,7 +39,7 @@ const (
 	accessKeyMaxLen = 20
 
 	// Minimum length for MinIO secret key for both server and gateway mode.
-	secretKeyMinLen = 8
+	secretKeyMinLen = 4
 
 	// Maximum secret key length for MinIO, this
 	// is used when autogenerating new credentials.

@@ -136,13 +136,13 @@ export class ChangePasswordModal extends React.Component {
 
     return (
       <Modal bsSize="sm" animation={false} show={true}>
-        <ModalHeader>Change Password</ModalHeader>
+        <ModalHeader>Изменение пароля доступа</ModalHeader>
         <ModalBody className="m-t-20">
           <div className="has-toggle-password">
             <InputGroup
               value={this.state.currentAccessKey}
               id="currentAccessKey"
-              label="Current Access Key"
+              label="для пользователя"
               name="currentAccesskey"
               type="text"
               spellCheck="false"
@@ -169,7 +169,7 @@ export class ChangePasswordModal extends React.Component {
                 this.setState({ currentSecretKey: e.target.value })
               }}
               id="currentSecretKey"
-              label="Current Secret Key"
+              label="старый пароль"
               name="currentSecretKey"
               type={this.state.currentSecretKeyVisible ? "text" : "password"}
               spellCheck="false"
@@ -197,7 +197,7 @@ export class ChangePasswordModal extends React.Component {
                 this.setState({ newSecretKey: e.target.value })
               }}
               id="newSecretKey"
-              label="New Secret Key"
+              label="новый пароль"
               name="newSecretKey"
               type={this.state.newSecretKeyVisible ? "text" : "password"}
               spellCheck="false"
@@ -216,7 +216,7 @@ export class ChangePasswordModal extends React.Component {
             className={"btn btn-primary"}
             onClick={this.generateAuth.bind(this)}
           >
-            Generate
+            предложить
           </button>
           <button
             id="update-keys"
@@ -227,14 +227,14 @@ export class ChangePasswordModal extends React.Component {
             disabled={!this.canUpdateCredentials()}
             onClick={this.setAuth.bind(this)}
           >
-            Update
+            изменить
           </button>
           <button
             id="cancel-change-password"
             className="btn btn-link"
             onClick={hideChangePassword}
           >
-            Cancel
+            отмена
           </button>
         </div>
       </Modal>
