@@ -78,12 +78,12 @@ export class BrowserDropdown extends React.Component {
             </li>
             <li>
               <a target="_blank" href="https://npt.ru/klientam/tehtrebovaniya/">
-                Техтребования <i className="fas fa-book" />
+                Технические требования <i className="fas fa-book" />
               </a>
             </li>
             <li>
               <a href="" onClick={this.showChangePassword.bind(this)}>
-                пароль <i className="fas fa-cog" />
+                Сменить пароль <i className="fas fa-cog" />
               </a>
               {this.state.showChangePasswordModal && (
                 <ChangePasswordModal
