@@ -72,8 +72,18 @@ export class BrowserDropdown extends React.Component {
           </Dropdown.Toggle>
           <Dropdown.Menu className="dropdown-menu-right">
             <li>
+              <a target="_blank" href="https://www.npt.ru">
+                Официальная информация <i className="fas fa-info-circle" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://npt.ru/klientam/tehtrebovaniya/">
+                Техтребования <i className="fas fa-book" />
+              </a>
+            </li>
+            <li>
               <a href="" onClick={this.showChangePassword.bind(this)}>
-                Change Password <i className="fas fa-cog" />
+                пароль <i className="fas fa-cog" />
               </a>
               {this.state.showChangePasswordModal && (
                 <ChangePasswordModal
@@ -83,34 +93,8 @@ export class BrowserDropdown extends React.Component {
               )}
             </li>
             <li>
-              <a target="_blank" href="https://docs.min.io/?ref=ob">
-                Documentation <i className="fas fa-book" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://github.com/minio/minio">
-                GitHub <i className="fab fa-github" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://min.io/pricing?ref=ob">
-                Get Support <i className="fas fa-question-circle" />
-              </a>
-            </li>
-            <li>
-              <a href="" id="show-about" onClick={this.showAbout.bind(this)}>
-                About <i className="fas fa-info-circle" />
-              </a>
-              {this.state.showAboutModal && (
-                <AboutModal
-                  serverInfo={serverInfo}
-                  hideAbout={this.hideAbout.bind(this)}
-                />
-              )}
-            </li>
-            <li>
               <a href="" id="logout" onClick={this.logout}>
-                Logout <i className="fas fa-sign-out-alt" />
+                выход <i className="fas fa-sign-out-alt" />
               </a>
             </li>
           </Dropdown.Menu>
