@@ -25,12 +25,12 @@ export const WRITE_ONLY = "writeonly"
 export const READ_WRITE = "readwrite"
 export const NONE = "none"
 
-export const SHARE_OBJECT_EXPIRY_DAYS = 5
+export const SHARE_OBJECT_EXPIRY_DAYS = 2
 export const SHARE_OBJECT_EXPIRY_HOURS = 0
 export const SHARE_OBJECT_EXPIRY_MINUTES = 0
 
-export const ACCESS_KEY_MIN_LENGTH = 3
-export const SECRET_KEY_MIN_LENGTH = 8
+export const ACCESS_KEY_MIN_LENGTH = 4
+export const SECRET_KEY_MIN_LENGTH = 4
 
 export const SORT_BY_NAME = "name"
 export const SORT_BY_SIZE = "size"
