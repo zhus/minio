@@ -163,7 +163,7 @@ export class Login extends React.Component {
           )}
         </div>
         <div className="l-footer">
-          <a className="lf-logo" href="">
+          <a className="lf-logo" href="https://npt.ru/">
             <img src={logo} alt="" />
           </a>
           <div className="lf-server">{window.location.host}</div>
