@@ -86,10 +86,10 @@ export class ShareObjectModal extends React.Component {
         onHide={hideShareObject}
         bsSize="small"
       >
-        <ModalHeader>Share Object</ModalHeader>
+        <ModalHeader>Публичный доступ</ModalHeader>
         <ModalBody>
           <div className="input-group copy-text">
-            <label>Shareable Link</label>
+            <label>Ссылка на объект</label>
             <input
               type="text"
               ref={node => (this.copyTextInput = node)}
@@ -103,7 +103,7 @@ export class ShareObjectModal extends React.Component {
             className="input-group"
             style={{ display: web.LoggedIn() ? "block" : "none" }}
           >
-            <label>Expires in (Max 7 days)</label>
+            <label>Срок хранения (не более 7 дней)</label>
             <div className="set-expire">
               <div className="set-expire-item">
                 <i
@@ -183,10 +183,10 @@ export class ShareObjectModal extends React.Component {
             text={url}
             onCopy={this.onUrlCopied.bind(this)}
           >
-            <button className="btn btn-success">Copy Link</button>
+            <button className="btn btn-success">Скопировать</button>
           </CopyToClipboard>
           <button className="btn btn-link" onClick={hideShareObject}>
-            Cancel
+            Отмена
           </button>
         </div>
       </Modal>
