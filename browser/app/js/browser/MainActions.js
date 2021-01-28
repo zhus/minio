@@ -45,14 +45,14 @@ export const MainActions = ({
 
   if (loggedIn || prefixWritable) {
     return (
-      <Dropdown dropup className="feb-actions" id="fe-action-toggle">
-        <Dropdown.Toggle noCaret className="feba-toggle">
-          <span>
-            <i className="fas fa-plus" />
-          </span>
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          <OverlayTrigger placement="left" overlay={uploadTooltip}>
+      // <Dropdown dropup className="feb-actions" id="fe-action-toggle">
+      //   <Dropdown.Toggle noCaret className="feba-toggle">
+      //     <span>
+      //       <i className="fas fa-plus" />
+      //     </span>
+      //   </Dropdown.Toggle>
+      //   <Dropdown.Menu>
+      //     <OverlayTrigger placement="left" overlay={uploadTooltip}>
             <a href="#" className="feba-btn feba-upload">
               <input
                 type="file"
@@ -66,24 +66,24 @@ export const MainActions = ({
                 <i className="fas fa-cloud-upload-alt" />{" "}
               </label>
             </a>
-          </OverlayTrigger>
-          {loggedIn && (
-            <OverlayTrigger placement="left" overlay={makeBucketTooltip}>
-              <a
-                href="#"
-                id="show-make-bucket"
-                className="feba-btn feba-bucket"
-                onClick={e => {
-                  e.preventDefault()
-                  showMakeBucketModal()
-                }}
-              >
-                <i className="far fa-hdd" />
-              </a>
-            </OverlayTrigger>
-          )}
-        </Dropdown.Menu>
-      </Dropdown>
+      //     </OverlayTrigger>
+      //     {loggedIn && (
+      //       <OverlayTrigger placement="left" overlay={makeBucketTooltip}>
+      //         <a
+      //           href="#"
+      //           id="show-make-bucket"
+      //           className="feba-btn feba-bucket"
+      //           onClick={e => {
+      //             e.preventDefault()
+      //             showMakeBucketModal()
+      //           }}
+      //         >
+      //           <i className="far fa-hdd" />
+      //         </a>
+      //       </OverlayTrigger>
+      //     )}
+      //   </Dropdown.Menu>
+      // </Dropdown>
     )
   } else {
     return <noscript />
